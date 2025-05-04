@@ -1,7 +1,67 @@
-reck(cube(20));
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reck Cube Visualization</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            color: #333;
+        }
 
+        header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
 
-module reck() {
-    minkowski() {
-        children(); sphere(5,$fn=25); }
-    };
+        header h1 {
+            font-size: 2rem;
+            color: #444;
+        }
+
+        code {
+            background-color: #e8e8e8;
+            padding: 10px;
+            border-radius: 5px;
+            font-family: monospace;
+            display: block;
+            margin-top: 10px;
+        }
+
+        footer {
+            margin-top: 20px;
+            font-size: 0.9rem;
+            color: #777;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Reck Cube Visualization</h1>
+        <p>This is the geometric script for creating a reck cube using minkowski operations.</p>
+    </header>
+    <main>
+        <code>
+            reck(cube(20));<br>
+            <br>
+            module reck() {<br>
+                &nbsp;&nbsp;minkowski() {<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;children(); sphere(5, $fn = 25);<br>
+                &nbsp;&nbsp;};<br>
+            };<br>
+        </code>
+    </main>
+    <footer>
+        <p>Created using <strong>HTML & CSS</strong></p>
+    </footer>
+</body>
+</html>
